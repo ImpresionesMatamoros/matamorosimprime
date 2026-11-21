@@ -1,0 +1,286 @@
+{
+  "version": 1,
+  "productos": [
+    "banners",
+    "business-cards",
+    "caps",
+    "car-magnets",
+    "coroplast-cutouts",
+    "custom-t-shirts",
+    "dtf-transfers",
+    "embroidery",
+    "flyers",
+    "menus",
+    "name-badges",
+    "paper-stickers",
+    "polos",
+    "posters",
+    "roll-up-banners",
+    "slippers",
+    "stickers",
+    "table-covers",
+    "tickets",
+    "tote-bags",
+    "vinyl-lettering",
+    "yard-signs"
+  ],
+  "menus": [
+    {
+      "id": "gran-formato",
+      "columnas": [
+        {
+          "id": "lonas-y-banners",
+          "entradas": [
+            {
+              "id": "lonas-de-vinilo",
+              "producto": "banners"
+            },
+            {
+              "id": "banners-retractiles",
+              "producto": "roll-up-banners"
+            },
+            {
+              "id": "fondo-de-evento"
+            },
+            {
+              "id": "banderas-publicitarias"
+            }
+          ]
+        },
+        {
+          "id": "letreros",
+          "entradas": [
+            {
+              "id": "coroplast",
+              "producto": "yard-signs"
+            },
+            {
+              "id": "letreros-de-bienes-raices",
+              "producto": "yard-signs"
+            },
+            {
+              "id": "caballetes"
+            },
+            {
+              "id": "figuras-recortadas-de-coroplast",
+              "producto": "coroplast-cutouts"
+            },
+            {
+              "id": "carteles-de-foam-board"
+            }
+          ]
+        },
+        {
+          "id": "vehiculo-y-vitrina",
+          "entradas": [
+            {
+              "id": "magnetos-para-auto",
+              "producto": "car-magnets"
+            },
+            {
+              "id": "calcas-para-ventana",
+              "producto": "vinyl-lettering"
+            },
+            {
+              "id": "vinil-para-vehiculos"
+            },
+            {
+              "id": "graficos-de-piso"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ropa",
+      "columnas": [
+        {
+          "id": "playeras-y-tops",
+          "entradas": [
+            {
+              "id": "playeras-personalizadas",
+              "producto": "custom-t-shirts"
+            },
+            {
+              "id": "camisas-polo",
+              "producto": "polos"
+            },
+            {
+              "id": "sudaderas-con-capucha"
+            },
+            {
+              "id": "camisetas-sin-manga"
+            }
+          ]
+        },
+        {
+          "id": "gorras-y-uniformes",
+          "entradas": [
+            {
+              "id": "gorras-y-sombreros",
+              "producto": "caps"
+            },
+            {
+              "id": "ropa-de-trabajo-y-uniformes"
+            },
+            {
+              "id": "mandiles"
+            },
+            {
+              "id": "uniformes-deportivos"
+            }
+          ]
+        },
+        {
+          "id": "metodos-de-decoracion",
+          "entradas": [
+            {
+              "id": "serigrafia"
+            },
+            {
+              "id": "transferencia-dtf",
+              "producto": "dtf-transfers"
+            },
+            {
+              "id": "bordado",
+              "producto": "embroidery"
+            },
+            {
+              "id": "comparar-metodos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "negocios",
+      "columnas": [
+        {
+          "id": "por-industria",
+          "entradas": [
+            {
+              "id": "restaurantes-y-alimentos"
+            },
+            {
+              "id": "bienes-raices"
+            },
+            {
+              "id": "contratistas"
+            },
+            {
+              "id": "escuelas-y-equipos"
+            },
+            {
+              "id": "corporativo-y-oficinas"
+            },
+            {
+              "id": "tiendas-y-locales"
+            }
+          ]
+        },
+        {
+          "id": "servicios-empresariales",
+          "entradas": [
+            {
+              "id": "cuenta-de-impresion-recurrente"
+            },
+            {
+              "id": "solicitudes-con-fecha-limite"
+            },
+            {
+              "id": "servicios-de-diseno"
+            },
+            {
+              "id": "pedidos-multi-sucursal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eventos",
+      "columnas": [
+        {
+          "id": "senalizacion-del-evento",
+          "entradas": [
+            {
+              "id": "fondo-step-repeat"
+            },
+            {
+              "id": "lonas-de-vinilo-para-evento",
+              "producto": "banners"
+            },
+            {
+              "id": "banderas-publicitarias"
+            },
+            {
+              "id": "caballetes-y-senales-de-direccion"
+            },
+            {
+              "id": "manteles-y-caminos-de-mesa",
+              "producto": "table-covers"
+            }
+          ]
+        },
+        {
+          "id": "ropa-para-evento",
+          "entradas": [
+            {
+              "id": "pantuflas-personalizadas",
+              "producto": "slippers"
+            },
+            {
+              "id": "playeras-para-evento",
+              "producto": "custom-t-shirts"
+            },
+            {
+              "id": "gorras-personalizadas",
+              "producto": "caps"
+            },
+            {
+              "id": "polos-para-staff",
+              "producto": "polos"
+            },
+            {
+              "id": "playeras-de-voluntarios",
+              "producto": "custom-t-shirts"
+            },
+            {
+              "id": "bolsas-personalizadas",
+              "producto": "tote-bags"
+            }
+          ]
+        },
+        {
+          "id": "impresos-para-evento",
+          "entradas": [
+            {
+              "id": "flyers-y-programas",
+              "producto": "flyers"
+            },
+            {
+              "id": "menus-y-porta-menus",
+              "producto": "menus"
+            },
+            {
+              "id": "boletos-e-invitaciones",
+              "producto": "tickets"
+            },
+            {
+              "id": "posters-de-evento",
+              "producto": "posters"
+            },
+            {
+              "id": "stickers-de-papel",
+              "producto": "paper-stickers"
+            },
+            {
+              "id": "gafetes-e-insertos",
+              "producto": "name-badges"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
