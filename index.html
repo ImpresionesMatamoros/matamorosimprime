@@ -1,159 +1,531 @@
 <!doctype html>
 <html lang="es-MX">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Prepara tu solicitud de impresión con Matamoros Imprime, en Matamoros, Tamaulipas.">
-<title>Matamoros Imprime | Impresiones en Matamoros</title>
-<style>
-:root{color-scheme:light;--paper:#f8f5ec;--ink:#173329;--green:#cdef72;--line:#c4cec1}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.55 system-ui,sans-serif}
-a{color:inherit}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #bb4a25;outline-offset:4px}
-.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
-header{border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:72px}
-.brand{font-weight:900;text-decoration:none;letter-spacing:-.045em;font-size:1.35rem}
-.mark{display:inline-block;background:var(--ink);color:var(--green);border-radius:.35rem;padding:.05rem .34rem;margin-right:.4rem}
-.links{display:flex;gap:clamp(.7rem,3vw,1.75rem);font-weight:680}
-.links a{text-decoration:none}
-.links a:hover{text-decoration:underline}
-.hero{display:grid;grid-template-columns:1.16fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding-block:clamp(3rem,8vw,6rem)}
-h1,h2,h3,p{margin-top:0}
-h1{font-size:clamp(2.75rem,7vw,6rem);letter-spacing:-.085em;line-height:.96;margin-bottom:1.35rem}
-h2{font-size:clamp(2rem,5vw,3.3rem);line-height:1;letter-spacing:-.065em;margin-bottom:1rem}
-.place{font-size:.88rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
-.intro{font-size:1.15rem;max-width:34ch}
-.btn{display:inline-block;background:var(--green);color:var(--ink);border:1px solid var(--ink);border-radius:.5rem;padding:.75rem 1.1rem;text-decoration:none;font:inherit;font-weight:800;cursor:pointer}
-.btn:hover{background:#ddf5a6}
-.art{aspect-ratio:1.15;background:#dce7cd;border-radius:1.1rem;position:relative;isolation:isolate;overflow:hidden;background-image:radial-gradient(#9eb49b 1px,transparent 1px);background-size:12px 12px}
-.sheet{position:absolute;width:48%;height:74%;top:11%;left:26%;border-radius:.4rem;box-shadow:0 12px 25px #18342940}
-.sheet-back{background:#e78364;transform:translate(24%,7%) rotate(17deg)}
-.sheet-middle{background:#fffbeb;transform:translate(-24%,7%) rotate(-17deg);background-image:repeating-linear-gradient(0deg,transparent 0 11px,#d2cebb 11px 12px)}
-.sheet-front{background:var(--ink);color:var(--green);transform:rotate(-5deg);display:grid;place-items:center;font-size:clamp(3rem,11vw,9rem);font-weight:950;letter-spacing:-.13em;padding-right:.13em}
-.catalog{border-top:1px solid var(--line);padding-block:3rem 4rem}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem}
-.card{display:block;padding:1.1rem 1.2rem;border:1px solid var(--line);border-radius:.65rem;text-decoration:none;background:#fffdf6}
-.card:hover{border-color:var(--ink)}
-.card strong{display:block;font-size:1.13rem}
-.quote{background:var(--ink);color:var(--paper);padding-block:3.5rem}
-.quote .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem}
-form{display:grid;gap:.8rem}
-.fields{display:grid;grid-template-columns:1.5fr 1fr;gap:.75rem}
-label{display:grid;gap:.3rem;font-weight:650}
-input,select,textarea{width:100%;padding:.65rem;border-radius:.35rem;border:1px solid #a9b8a9;background:#fffdf6;color:var(--ink);font:inherit}
-textarea{resize:vertical}
-form .btn{justify-self:start}
-#result:not([hidden]){display:grid;gap:.6rem}
-#status{margin:0;min-height:1.55em}
-footer{padding-block:1.3rem;font-weight:650}
-@media(max-width:720px){.hero,.quote .wrap{grid-template-columns:1fr}.art{max-width:480px;width:100%;aspect-ratio:1.45}.cards{grid-template-columns:1fr}}
-@media(max-width:400px){.wrap{width:calc(100% - 28px)}.brand{font-size:1.08rem}.links{font-size:.92rem}.fields{grid-template-columns:1fr}}
-</style>
-</head>
-<body>
-<header id="inicio">
-  <nav class="wrap" aria-label="Navegación principal">
-    <a class="brand" href="#inicio"><span class="mark" aria-hidden="true">M</span>Matamoros Imprime</a>
-    <div class="links"><a href="#productos">Productos</a><a href="#cotizar">Cotizar</a></div>
-  </nav>
-</header>
-<main>
-  <section class="hero wrap">
-    <div>
-      <p class="place">Matamoros, Tamaulipas</p>
-      <h1>Imprime lo que imaginas.</h1>
-      <p class="intro">Prepara tu solicitud para imprimir lonas, etiquetas o materiales para tu negocio.</p>
-      <a class="btn" href="#cotizar">Preparar cotización</a>
-    </div>
-    <div class="art" aria-hidden="true"><div class="sheet sheet-back"></div><div class="sheet sheet-middle"></div><div class="sheet sheet-front">M.</div></div>
-  </section>
-  <section id="productos" class="catalog wrap">
-    <h2>¿Qué quieres imprimir?</h2>
-    <div class="cards">
-      <a class="card" href="#cotizar" data-product="Lonas y anuncios"><strong>Lonas y anuncios</strong>Para eventos, fachadas y promociones.</a>
-      <a class="card" href="#cotizar" data-product="Tarjetas y volantes"><strong>Tarjetas y volantes</strong>Para presentar y difundir tu negocio.</a>
-      <a class="card" href="#cotizar" data-product="Etiquetas y calcomanías"><strong>Etiquetas y calcomanías</strong>Para empaques, productos y regalos.</a>
-    </div>
-  </section>
-  <section id="cotizar" class="quote">
-    <div class="wrap">
-      <div>
-        <h2>Arma tu solicitud</h2>
-        <p>Agrega las medidas y el acabado que buscas. Puedes copiar el texto y compartirlo con la imprenta.</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explora lonas, letreros, tarjetas y calcomanías. Prepara tu solicitud con Matamoros Imprime, en Matamoros, Tamaulipas."
+    />
+    <meta name="theme-color" content="#173329" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Matamoros Imprime | Impresiones en Matamoros"
+    />
+    <meta
+      property="og:description"
+      content="Explora productos y prepara tu solicitud de impresión."
+    />
+    <meta
+      property="og:image"
+      content="https://matamorosimprime.com/portada-matamoros.webp"
+    />
+    <link rel="canonical" href="https://matamorosimprime.com/" />
+    <link rel="icon" href="./marca.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./escaparate.css" />
+    <link rel="stylesheet" href="./matamoros.css" />
+    <script src="./inicio.js" defer=""></script>
+    <title>Matamoros Imprime | Impresiones en Matamoros</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="flex min-h-[100dvh] flex-col">
+        <header
+          class="relative z-30 border-b border-line bg-mist text-ink"
+          id="inicio"
+        >
+          <a href="#main" class="mx-skip">Ir al contenido</a>
+          <div
+            class="container-site grid items-center gap-2 py-2 md:grid-cols-[250px_minmax(0,1fr)_210px] md:gap-4 md:py-5 mx-header-grid"
+          >
+            <div class="flex items-center justify-between gap-2">
+              <a
+                class="mx-brand"
+                href="#inicio"
+                aria-label="Matamoros Imprime, inicio"
+              >
+                <span class="mx-mark" aria-hidden="true">M.</span
+                ><span>Matamoros<br />Imprime</span>
+              </a>
+            </div>
+            <div class="relative">
+              <form
+                role="search"
+                class="flex h-11 rounded-lg border border-ink/30 bg-white shadow-sm focus-within:ring-2 focus-within:ring-sun md:h-12"
+                id="buscar"
+                action="#productos"
+              >
+                <input
+                  aria-label="Buscar productos"
+                  placeholder="Busca lonas, tarjetas, etiquetas y más…"
+                  class="min-w-0 flex-1 rounded-l-lg bg-transparent px-3 text-base outline-none placeholder-shown:text-ellipsis md:px-4 md:text-sm"
+                  id="buscar-producto"
+                  type="search"
+                /><button
+                  aria-label="Buscar"
+                  class="grid min-w-11 place-items-center rounded-r-lg bg-sun px-3 text-sm font-bold md:px-5"
+                >
+                  <span class="md:hidden"
+                    ><svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                      class="shrink-0"
+                    >
+                      <path
+                        d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm9 16-4.2-4.2"
+                      ></path></svg></span
+                  ><span class="hidden md:inline">Buscar</span>
+                </button>
+              </form>
+            </div>
+            <a href="#cotizar" class="mx-header-quote">Preparar cotización</a>
+          </div>
+          <nav class="mx-nav" aria-label="Navegación principal">
+            <div class="container-site">
+              <a href="#productos">Catálogo</a>
+              <a href="#productos" data-category="gran-formato">Gran formato</a>
+              <a href="#productos" data-category="papel">Impresos</a>
+              <a href="#productos" data-category="etiquetas">Etiquetas</a>
+              <a href="#ideas">Ideas para imprimir</a>
+            </div>
+          </nav>
+        </header>
+        <main id="main" class="flex-1" tabindex="-1">
+          <div class="bg-white">
+            <section
+              class="relative overflow-hidden border-b border-[#dce6cf] bg-[#eaf1dc] mx-hero"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute -left-24 top-20 h-72 w-72 rounded-full bg-[#f5c7a3]/45"
+              ></div>
+              <div
+                class="container-site relative grid items-center gap-5 py-5 md:gap-8 md:grid-cols-[.92fr_1.08fr] md:py-12 lg:gap-12"
+              >
+                <div class="md:py-2">
+                  <p
+                    class="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1.5 md:px-3.5 md:py-2 font-mono text-[10px] font-bold tracking-[.16em] text-[#43603c]"
+                  >
+                    <span class="h-2 w-2 rounded-full bg-[#b2c83e]"></span
+                    >MATAMOROS, TAMAULIPAS
+                  </p>
+                  <h1
+                    class="display mt-3 max-w-xl text-[clamp(29px,8.1vw,40px)] md:mt-4 md:text-[48px] lg:text-[58px]"
+                  >
+                    Imprime lo que imaginas.
+                  </h1>
+                  <p
+                    class="mt-4 hidden max-w-lg text-[17px] leading-relaxed text-[#3d5544] md:block"
+                  >
+                    Lonas, letreros e impresos para tu negocio, tu evento o tu
+                    próxima idea.
+                  </p>
+                  <div class="mt-3 flex flex-wrap gap-3 md:mt-5">
+                    <a
+                      class="rounded-full bg-[#193e27] px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[#315638]"
+                      href="#productos"
+                      >Explorar productos</a
+                    ><a
+                      class="hidden rounded-full border border-[#193e27]/25 md:inline-flex bg-white/70 px-5 py-3 text-sm font-bold text-[#193e27] transition hover:bg-white mx-hero-secondary"
+                      href="#cotizar"
+                      data-product="Lonas"
+                      >Cotizar una lona</a
+                    >
+                  </div>
+                </div>
+                <a
+                  class="group relative block overflow-hidden rounded-2xl bg-ink md:rounded-[1.75rem] shadow-[0_28px_60px_-34px_rgba(25,62,39,.65)] ring-4 ring-white/60"
+                  href="#productos"
+                  ><img
+                    src="./portada-matamoros.webp"
+                    alt="Ejemplo ilustrativo de carteles, tarjetas y calcomanías en los colores de Matamoros Imprime"
+                    width="1200"
+                    height="800"
+                    fetchpriority="high"
+                    class="aspect-[1.5] w-full object-cover md:h-[360px] transition-transform duration-500 group-hover:scale-[1.03] lg:h-[420px]"
+                  />
+                  <div
+                    class="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 bg-gradient-to-t from-black/85 via-black/35 to-transparent p-3.5 pt-14 text-white md:p-7 md:pt-24"
+                  >
+                    <div>
+                      <p class="text-base font-bold md:mt-1 md:text-lg">
+                        Impresión para tu negocio
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+            </section>
+            <div class="container-site py-6 sm:py-10 mx-catalog" id="productos">
+              <div class="mb-5 flex items-end justify-between gap-3">
+                <div>
+                  <h2 class="mt-2 text-xl font-bold sm:text-3xl">
+                    ¿Qué quieres imprimir?
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="grid grid-cols-2 gap-3 sm:flex sm:gap-4 sm:overflow-x-auto sm:pb-1 no-scrollbar mx-filters"
+                role="group"
+                aria-label="Filtrar productos"
+              >
+                <button
+                  type="button"
+                  class="group relative flex shrink-0 flex-col overflow-hidden rounded-xl focus-visible:outline-offset-2 sm:w-44"
+                  data-filter="todos"
+                  aria-pressed="true"
+                >
+                  Todos</button
+                ><button
+                  type="button"
+                  class="group relative flex shrink-0 flex-col overflow-hidden rounded-xl focus-visible:outline-offset-2 sm:w-44"
+                  data-filter="gran-formato"
+                  aria-pressed="false"
+                >
+                  Gran formato</button
+                ><button
+                  type="button"
+                  class="group relative flex shrink-0 flex-col overflow-hidden rounded-xl focus-visible:outline-offset-2 sm:w-44"
+                  data-filter="papel"
+                  aria-pressed="false"
+                >
+                  Impresos</button
+                ><button
+                  type="button"
+                  class="group relative flex shrink-0 flex-col overflow-hidden rounded-xl focus-visible:outline-offset-2 sm:w-44"
+                  data-filter="etiquetas"
+                  aria-pressed="false"
+                >
+                  Etiquetas
+                </button>
+              </div>
+              <p
+                id="catalog-status"
+                class="mx-catalog-status"
+                role="status"
+              ></p>
+              <div
+                class="grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4 mx-product-grid"
+              >
+                <a
+                  data-testid="home-product-card"
+                  class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
+                  href="#cotizar"
+                  data-product="Lonas"
+                  data-group="gran-formato"
+                  ><div class="relative overflow-hidden bg-mist">
+                    <img
+                      src="./producto-lonas.webp"
+                      alt=""
+                      width="640"
+                      height="427"
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[1.45] w-full object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-2.5 sm:p-4">
+                    <h3 class="text-sm font-bold sm:text-base">Lonas</h3>
+                    <p
+                      class="mt-1 text-xs leading-relaxed text-ink-soft md:block mx-product-caption"
+                    >
+                      Para fachadas, promociones y eventos.
+                    </p>
+                    <div class="mt-auto pt-1 md:pt-4">
+                      <p class="mt-2 text-xs font-bold text-palm md:mt-3">
+                        Preparar cotización
+                      </p>
+                    </div>
+                  </div></a
+                ><a
+                  data-testid="home-product-card"
+                  class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
+                  href="#cotizar"
+                  data-product="Letreros"
+                  data-group="gran-formato"
+                  ><div class="relative overflow-hidden bg-mist">
+                    <img
+                      src="./producto-letreros.webp"
+                      alt=""
+                      width="580"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[1.45] w-full object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-2.5 sm:p-4">
+                    <h3 class="text-sm font-bold sm:text-base">Letreros</h3>
+                    <p
+                      class="mt-1 text-xs leading-relaxed text-ink-soft md:block mx-product-caption"
+                    >
+                      Para anunciar o señalizar un espacio.
+                    </p>
+                    <div class="mt-auto pt-1 md:pt-4">
+                      <p class="mt-2 text-xs font-bold text-palm md:mt-3">
+                        Preparar cotización
+                      </p>
+                    </div>
+                  </div></a
+                ><a
+                  data-testid="home-product-card"
+                  class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
+                  href="#cotizar"
+                  data-product="Tarjetas de presentación"
+                  data-group="papel"
+                  ><div class="relative overflow-hidden bg-mist">
+                    <img
+                      src="./producto-tarjetas.webp"
+                      alt=""
+                      width="580"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[1.45] w-full object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-2.5 sm:p-4">
+                    <h3 class="text-sm font-bold sm:text-base">
+                      Tarjetas de presentación
+                    </h3>
+                    <p
+                      class="mt-1 text-xs leading-relaxed text-ink-soft md:block mx-product-caption"
+                    >
+                      Para compartir los datos de tu negocio.
+                    </p>
+                    <div class="mt-auto pt-1 md:pt-4">
+                      <p class="mt-2 text-xs font-bold text-palm md:mt-3">
+                        Preparar cotización
+                      </p>
+                    </div>
+                  </div></a
+                ><a
+                  data-testid="home-product-card"
+                  class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
+                  href="#cotizar"
+                  data-product="Menús"
+                  data-group="papel"
+                  ><div class="relative overflow-hidden bg-mist">
+                    <img
+                      src="./producto-menus.webp"
+                      alt=""
+                      width="580"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[1.45] w-full object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-2.5 sm:p-4">
+                    <h3 class="text-sm font-bold sm:text-base">Menús</h3>
+                    <p
+                      class="mt-1 text-xs leading-relaxed text-ink-soft md:block mx-product-caption"
+                    >
+                      Para restaurantes, cafeterías y eventos.
+                    </p>
+                    <div class="mt-auto pt-1 md:pt-4">
+                      <p class="mt-2 text-xs font-bold text-palm md:mt-3">
+                        Preparar cotización
+                      </p>
+                    </div>
+                  </div></a
+                ><a
+                  data-testid="home-product-card"
+                  class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
+                  href="#cotizar"
+                  data-product="Calcomanías de vinil"
+                  data-group="etiquetas"
+                  ><div class="relative overflow-hidden bg-mist">
+                    <img
+                      src="./producto-calcomanias.webp"
+                      alt=""
+                      width="580"
+                      height="400"
+                      loading="lazy"
+                      decoding="async"
+                      class="aspect-[1.45] w-full object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col p-2.5 sm:p-4">
+                    <h3 class="text-sm font-bold sm:text-base">
+                      Calcomanías de vinil
+                    </h3>
+                    <p
+                      class="mt-1 text-xs leading-relaxed text-ink-soft md:block mx-product-caption"
+                    >
+                      Para empaques, promociones y regalos.
+                    </p>
+                    <div class="mt-auto pt-1 md:pt-4">
+                      <p class="mt-2 text-xs font-bold text-palm md:mt-3">
+                        Preparar cotización
+                      </p>
+                    </div>
+                  </div></a
+                >
+              </div>
+              <p class="mt-3 text-xs text-ink-soft">
+                Imágenes ilustrativas de los productos.
+              </p>
+            </div>
+            <section class="container-site py-10" id="ideas">
+              <div class="mb-5 flex items-end justify-between gap-4">
+                <div>
+                  <h2 class="mt-2 text-2xl font-bold sm:text-3xl">
+                    Ideas para tu próxima impresión
+                  </h2>
+                </div>
+              </div>
+              <div class="grid gap-4 sm:grid-cols-3">
+                <a
+                  class="group overflow-hidden rounded-xl border border-line"
+                  href="#cotizar"
+                  data-product="Lonas"
+                  ><img
+                    src="./idea-negocio.webp"
+                    alt=""
+                    loading="lazy"
+                    width="1536"
+                    height="1024"
+                    class="aspect-[1.5] w-full object-cover transition-transform group-hover:scale-[1.02]"
+                  />
+                  <div class="p-4">
+                    <h3 class="font-bold">Haz visible tu negocio</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                      Lonas para fachadas, aperturas o puntos de venta.
+                    </p>
+                  </div></a
+                ><a
+                  class="group overflow-hidden rounded-xl border border-line"
+                  href="#cotizar"
+                  data-product="Otro proyecto"
+                  ><img
+                    src="./idea-evento.webp"
+                    alt=""
+                    loading="lazy"
+                    width="1536"
+                    height="1024"
+                    class="aspect-[1.5] w-full object-cover transition-transform group-hover:scale-[1.02]"
+                  />
+                  <div class="p-4">
+                    <h3 class="font-bold">Dale ambiente a tu evento</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                      Un fondo impreso para fotos, celebraciones y reuniones.
+                    </p>
+                  </div></a
+                ><a
+                  class="group overflow-hidden rounded-xl border border-line"
+                  href="#cotizar"
+                  data-product="Lonas"
+                  ><img
+                    src="./idea-promocion.webp"
+                    alt=""
+                    loading="lazy"
+                    width="1536"
+                    height="1024"
+                    class="aspect-[1.5] w-full object-cover transition-transform group-hover:scale-[1.02]"
+                  />
+                  <div class="p-4">
+                    <h3 class="font-bold">Destaca una promoción</h3>
+                    <p class="mt-2 text-sm leading-relaxed text-ink-soft">
+                      Anuncia ofertas, temporadas y fechas especiales.
+                    </p>
+                  </div></a
+                >
+              </div>
+              <p class="mt-3 text-xs text-ink-soft">Ejemplos ilustrativos.</p>
+            </section>
+            <section id="cotizar" class="quote mx-quote">
+              <div class="container-site mx-quote-grid">
+                <div>
+                  <h2 class="display text-3xl sm:text-4xl">
+                    Prepara tu cotización
+                  </h2>
+                  <p>
+                    Elige el producto e indica la cantidad y las medidas. Podrás
+                    copiar tu solicitud y compartirla con la imprenta.
+                  </p>
+                </div>
+                <form id="quote">
+                  <div class="fields">
+                    <label
+                      >Producto
+                      <select id="product" required="">
+                        <option value="">Selecciona un producto</option>
+                        <option>Lonas</option>
+                        <option>Letreros</option>
+                        <option>Tarjetas de presentación</option>
+                        <option>Menús</option>
+                        <option>Calcomanías de vinil</option>
+                        <option>Volantes</option>
+                        <option>Etiquetas</option>
+                        <option>Otro proyecto</option>
+                      </select>
+                    </label>
+                    <label
+                      >Cantidad<input
+                        id="quantity"
+                        type="number"
+                        min="1"
+                        step="1"
+                        required=""
+                    /></label>
+                  </div>
+                  <label
+                    >Detalles
+                    <textarea
+                      id="details"
+                      rows="3"
+                      maxlength="1500"
+                      placeholder="Ej. Medida de 120 × 80 cm, para exterior"
+                    ></textarea>
+                  </label>
+                  <button class="mx-button" type="submit">
+                    Generar solicitud
+                  </button>
+                  <div id="result" hidden="">
+                    <label
+                      >Solicitud para compartir
+                      <textarea id="message" rows="5" readonly=""></textarea>
+                    </label>
+                    <button class="mx-button" id="copy" type="button">
+                      Copiar solicitud
+                    </button>
+                  </div>
+                  <p id="status" role="status"></p>
+                </form>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer class="mt-auto bg-ink text-white">
+          <div class="container-site mx-footer">
+            <div>
+              <a
+                class="mx-brand"
+                href="#inicio"
+                aria-label="Matamoros Imprime, inicio"
+              >
+                <span class="mx-mark" aria-hidden="true">M.</span
+                ><span>Matamoros<br />Imprime</span>
+              </a>
+              <p>Matamoros, Tamaulipas</p>
+            </div>
+            <nav aria-label="Enlaces al pie de página">
+              <a href="#productos">Catálogo</a>
+              <a href="#ideas">Ideas para imprimir</a>
+              <a href="#cotizar">Preparar cotización</a>
+            </nav>
+          </div>
+        </footer>
       </div>
-      <form id="quote">
-        <div class="fields">
-          <label>Producto
-            <select id="product" required>
-              <option value="">Selecciona un producto</option>
-              <option>Lonas y anuncios</option>
-              <option>Tarjetas y volantes</option>
-              <option>Etiquetas y calcomanías</option>
-              <option>Otro proyecto</option>
-            </select>
-          </label>
-          <label>Cantidad<input id="quantity" type="number" min="1" step="1" required></label>
-        </div>
-        <label>Detalles <textarea id="details" rows="3" maxlength="1500" placeholder="Ej. Medida de 120 × 80 cm, para exterior"></textarea></label>
-        <button class="btn" type="submit">Generar solicitud</button>
-        <div id="result" hidden>
-          <label>Solicitud para compartir <textarea id="message" rows="5" readonly></textarea></label>
-          <button class="btn" id="copy" type="button">Copiar solicitud</button>
-        </div>
-        <p id="status" role="status"></p>
-      </form>
     </div>
-  </section>
-</main>
-<footer class="wrap">Matamoros Imprime · Matamoros, Tamaulipas</footer>
-<script>
-const product = document.querySelector('#product');
-const form = document.querySelector('#quote');
-const message = document.querySelector('#message');
-const result = document.querySelector('#result');
-const status = document.querySelector('#status');
-
-function clearRequest() {
-  result.hidden = true;
-  status.textContent = '';
-}
-
-form.addEventListener('input', clearRequest);
-document.querySelectorAll('[data-product]').forEach(link => {
-  link.addEventListener('click', () => {
-    product.value = link.dataset.product;
-    clearRequest();
-  });
-});
-
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  const quantity = document.querySelector('#quantity').value;
-  const details = document.querySelector('#details').value.trim();
-  const lines = [
-    'Hola, Matamoros Imprime. Quisiera pedir una cotización.',
-    'Producto: ' + product.value,
-    'Cantidad: ' + quantity
-  ];
-  if (details) lines.push('Detalles: ' + details);
-  message.value = lines.join('\n');
-  result.hidden = false;
-  status.textContent = 'Solicitud lista para copiar.';
-  message.focus();
-});
-
-document.querySelector('#copy').addEventListener('click', async () => {
-  try {
-    await navigator.clipboard.writeText(message.value);
-    status.textContent = 'Solicitud copiada.';
-  } catch {
-    message.focus();
-    message.select();
-    status.textContent = 'El texto está seleccionado para que lo copies.';
-  }
-});
-</script>
-</body>
+  </body>
 </html>
