@@ -116,3 +116,32 @@ document.querySelector("#copy").addEventListener("click", async () => {
     quoteStatus.textContent = "El texto está seleccionado para que lo copies.";
   }
 });
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest("[data-catalog-all]")) return;
+  category = "todos";
+  searchInput.value = "";
+  updateCatalog();
+});
+
+const requestedProduct = new URLSearchParams(location.search)
+  .get("producto")
+  ?.trim()
+  .replace(/\s+/g, " ");
+if (requestedProduct && requestedProduct.length <= 100) {
+  const existing = [...product.options].find(
+    (option) => searchable(option.value) === searchable(requestedProduct),
+  );
+  if (existing) {
+    product.value = existing.value;
+  } else {
+    product.add(new Option(requestedProduct, requestedProduct, false, true));
+  }
+  if (location.hash === "#cotizar") {
+    window.addEventListener(
+      "load",
+      () => document.querySelector("#cotizar").scrollIntoView(),
+      { once: true },
+    );
+  }
+}

@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./matamoros.css" />
     <script src="./inicio.js" defer=""></script>
     <title>Matamoros Imprime | Impresiones en Matamoros</title>
+    <link rel="stylesheet" href="./navegacion.css" />
+    <script src="./navegacion.js" defer=""></script>
   </head>
   <body>
     <div id="root">
@@ -34,6 +36,7 @@
         <header
           class="relative z-30 border-b border-line bg-mist text-ink"
           id="inicio"
+          aria-label="Matamoros Imprime"
         >
           <a href="#main" class="mx-skip">Ir al contenido</a>
           <div
@@ -88,7 +91,11 @@
             </div>
             <a href="#cotizar" class="mx-header-quote">Preparar cotización</a>
           </div>
-          <nav class="mx-nav" aria-label="Navegación principal">
+          <nav
+            class="mx-nav"
+            aria-label="Navegación principal"
+            id="menu-principal"
+          >
             <div class="container-site">
               <a href="#productos">Catálogo</a>
               <a href="#productos" data-category="gran-formato">Gran formato</a>
@@ -218,8 +225,7 @@
                 <a
                   data-testid="home-product-card"
                   class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
-                  href="#cotizar"
-                  data-product="Lonas"
+                  href="./productos/lonas/"
                   data-group="gran-formato"
                   ><div class="relative overflow-hidden bg-mist">
                     <img
@@ -241,15 +247,14 @@
                     </p>
                     <div class="mt-auto pt-1 md:pt-4">
                       <p class="mt-2 text-xs font-bold text-palm md:mt-3">
-                        Preparar cotización
+                        Ver producto
                       </p>
                     </div>
                   </div></a
                 ><a
                   data-testid="home-product-card"
                   class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
-                  href="#cotizar"
-                  data-product="Letreros"
+                  href="./productos/letreros-de-coroplast/"
                   data-group="gran-formato"
                   ><div class="relative overflow-hidden bg-mist">
                     <img
@@ -271,15 +276,14 @@
                     </p>
                     <div class="mt-auto pt-1 md:pt-4">
                       <p class="mt-2 text-xs font-bold text-palm md:mt-3">
-                        Preparar cotización
+                        Ver producto
                       </p>
                     </div>
                   </div></a
                 ><a
                   data-testid="home-product-card"
                   class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
-                  href="#cotizar"
-                  data-product="Tarjetas de presentación"
+                  href="./productos/tarjetas-de-presentacion/"
                   data-group="papel"
                   ><div class="relative overflow-hidden bg-mist">
                     <img
@@ -303,15 +307,14 @@
                     </p>
                     <div class="mt-auto pt-1 md:pt-4">
                       <p class="mt-2 text-xs font-bold text-palm md:mt-3">
-                        Preparar cotización
+                        Ver producto
                       </p>
                     </div>
                   </div></a
                 ><a
                   data-testid="home-product-card"
                   class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
-                  href="#cotizar"
-                  data-product="Menús"
+                  href="./productos/menus/"
                   data-group="papel"
                   ><div class="relative overflow-hidden bg-mist">
                     <img
@@ -333,15 +336,14 @@
                     </p>
                     <div class="mt-auto pt-1 md:pt-4">
                       <p class="mt-2 text-xs font-bold text-palm md:mt-3">
-                        Preparar cotización
+                        Ver producto
                       </p>
                     </div>
                   </div></a
                 ><a
                   data-testid="home-product-card"
                   class="group flex flex-col overflow-hidden rounded-xl border border-line bg-white transition-shadow hover:shadow-lg mx-product"
-                  href="#cotizar"
-                  data-product="Calcomanías de vinil"
+                  href="./productos/calcomanias-de-vinil/"
                   data-group="etiquetas"
                   ><div class="relative overflow-hidden bg-mist">
                     <img
@@ -365,7 +367,7 @@
                     </p>
                     <div class="mt-auto pt-1 md:pt-4">
                       <p class="mt-2 text-xs font-bold text-palm md:mt-3">
-                        Preparar cotización
+                        Ver producto
                       </p>
                     </div>
                   </div></a
