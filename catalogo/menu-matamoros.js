@@ -7,7 +7,7 @@ export default [
         "label": "Lonas y banners",
         "entries": [
           {
-            "label": "Lonas de vinilo",
+            "label": "Lonas de vinil personalizadas",
             "hint": "",
             "href": "productos/lonas/"
           },
