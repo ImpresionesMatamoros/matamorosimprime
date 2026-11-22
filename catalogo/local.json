@@ -1,0 +1,311 @@
+{
+  "catalogo": {
+    "banners": "productos/lonas/",
+    "business-cards": "productos/tarjetas-de-presentacion/",
+    "caps": "productos/gorras-personalizadas/",
+    "car-magnets": "productos/imanes-para-auto/",
+    "coroplast-cutouts": "productos/figuras-de-coroplast/",
+    "custom-t-shirts": "productos/playeras-personalizadas/",
+    "dtf-transfers": "productos/transferencia-dtf/",
+    "embroidery": "productos/bordado/",
+    "flyers": "productos/volantes/",
+    "menus": "productos/menus/",
+    "name-badges": "productos/gafetes/",
+    "paper-stickers": "productos/etiquetas-de-papel/",
+    "polos": "productos/polos-personalizados/",
+    "posters": "productos/posters/",
+    "roll-up-banners": "productos/banners-retractiles/",
+    "slippers": "productos/pantuflas-personalizadas/",
+    "stickers": "productos/calcomanias-de-vinil/",
+    "table-covers": "productos/manteles-personalizados/",
+    "tickets": "productos/boletos-para-eventos/",
+    "tote-bags": "productos/bolsas-personalizadas/",
+    "vinyl-lettering": "productos/vinil-de-corte/",
+    "yard-signs": "productos/letreros-de-coroplast/"
+  },
+  "menus": {
+    "gran-formato": {
+      "clave": "gran-formato",
+      "columnas": {
+        "lonas-y-banners": {
+          "titulo": "Lonas y banners",
+          "enlaces": {
+            "lonas-de-vinilo": {
+              "texto": "Lonas de vinilo",
+              "ruta": "productos/lonas/"
+            },
+            "banners-retractiles": {
+              "texto": "Banners retráctiles",
+              "ruta": "productos/banners-retractiles/"
+            },
+            "fondo-de-evento": {
+              "texto": "Fondo de evento",
+              "ruta": "?producto=Fondo%20de%20evento#cotizar"
+            },
+            "banderas-publicitarias": {
+              "texto": "Banderas publicitarias",
+              "ruta": "?producto=Banderas%20publicitarias#cotizar"
+            }
+          }
+        },
+        "letreros": {
+          "titulo": "Letreros",
+          "enlaces": {
+            "coroplast": {
+              "texto": "Coroplast",
+              "ruta": "productos/letreros-de-coroplast/"
+            },
+            "letreros-de-bienes-raices": {
+              "texto": "Letreros de bienes raíces",
+              "ruta": "productos/letreros-de-coroplast/"
+            },
+            "caballetes": {
+              "texto": "Caballetes",
+              "ruta": "?producto=Caballetes#cotizar"
+            },
+            "figuras-recortadas-de-coroplast": {
+              "texto": "Figuras recortadas de coroplast",
+              "ruta": "productos/figuras-de-coroplast/"
+            },
+            "carteles-de-foam-board": {
+              "texto": "Carteles de foam board",
+              "ruta": "?producto=Carteles%20de%20foam%20board#cotizar"
+            }
+          }
+        },
+        "vehiculo-y-vitrina": {
+          "titulo": "Vehículo y vitrina",
+          "enlaces": {
+            "magnetos-para-auto": {
+              "texto": "Magnetos para auto",
+              "ruta": "productos/imanes-para-auto/"
+            },
+            "calcas-para-ventana": {
+              "texto": "Calcas para ventana",
+              "ruta": "productos/vinil-de-corte/"
+            },
+            "vinil-para-vehiculos": {
+              "texto": "Vinil para vehículos",
+              "ruta": "?producto=Vinil%20para%20veh%C3%ADculos#cotizar"
+            },
+            "graficos-de-piso": {
+              "texto": "Gráficos de piso",
+              "ruta": "?producto=Gr%C3%A1ficos%20de%20piso#cotizar"
+            }
+          }
+        }
+      }
+    },
+    "ropa": {
+      "clave": "ropa",
+      "columnas": {
+        "playeras-y-tops": {
+          "titulo": "Playeras y tops",
+          "enlaces": {
+            "playeras-personalizadas": {
+              "texto": "Playeras personalizadas",
+              "ruta": "productos/playeras-personalizadas/"
+            },
+            "camisas-polo": {
+              "texto": "Camisas polo",
+              "ruta": "productos/polos-personalizados/"
+            },
+            "sudaderas-con-capucha": {
+              "texto": "Sudaderas con capucha",
+              "ruta": "?producto=Sudaderas%20con%20capucha#cotizar"
+            },
+            "camisetas-sin-manga": {
+              "texto": "Camisetas sin manga",
+              "ruta": "?producto=Camisetas%20sin%20manga#cotizar"
+            }
+          }
+        },
+        "gorras-y-uniformes": {
+          "titulo": "Gorras y uniformes",
+          "enlaces": {
+            "gorras-y-sombreros": {
+              "texto": "Gorras y sombreros",
+              "ruta": "productos/gorras-personalizadas/"
+            },
+            "ropa-de-trabajo-y-uniformes": {
+              "texto": "Ropa de trabajo y uniformes",
+              "ruta": "?producto=Ropa%20de%20trabajo%20y%20uniformes#cotizar"
+            },
+            "mandiles": {
+              "texto": "Mandiles",
+              "ruta": "?producto=Mandiles#cotizar"
+            },
+            "uniformes-deportivos": {
+              "texto": "Uniformes deportivos",
+              "ruta": "?producto=Uniformes%20deportivos#cotizar"
+            }
+          }
+        },
+        "metodos-de-decoracion": {
+          "titulo": "Métodos de decoración",
+          "enlaces": {
+            "serigrafia": {
+              "texto": "Serigrafía",
+              "ruta": "productos/serigrafia/"
+            },
+            "transferencia-dtf": {
+              "texto": "Transferencia DTF",
+              "ruta": "productos/transferencia-dtf/"
+            },
+            "bordado": {
+              "texto": "Bordado",
+              "ruta": "productos/bordado/"
+            },
+            "comparar-metodos": {
+              "texto": "Comparar métodos",
+              "ruta": "categorias/ropa/#metodos-de-decoracion"
+            }
+          }
+        }
+      }
+    },
+    "negocios": {
+      "clave": "negocios",
+      "columnas": {
+        "por-industria": {
+          "titulo": "Por industria",
+          "enlaces": {
+            "restaurantes-y-alimentos": {
+              "texto": "Restaurantes y alimentos",
+              "ruta": "categorias/negocios/#restaurants"
+            },
+            "bienes-raices": {
+              "texto": "Bienes raíces",
+              "ruta": "categorias/negocios/#real-estate"
+            },
+            "contratistas": {
+              "texto": "Contratistas",
+              "ruta": "categorias/negocios/#construction"
+            },
+            "escuelas-y-equipos": {
+              "texto": "Escuelas y equipos",
+              "ruta": "categorias/negocios/#schools"
+            },
+            "corporativo-y-oficinas": {
+              "texto": "Corporativo y oficinas",
+              "ruta": "categorias/negocios/#corporate"
+            },
+            "tiendas-y-locales": {
+              "texto": "Tiendas y locales",
+              "ruta": "categorias/negocios/#retail"
+            }
+          }
+        },
+        "servicios-empresariales": {
+          "titulo": "Servicios empresariales",
+          "enlaces": {
+            "cuenta-de-impresion-recurrente": {
+              "texto": "Cuenta de impresión recurrente",
+              "ruta": "?producto=Cuenta%20de%20impresi%C3%B3n%20recurrente#cotizar"
+            },
+            "solicitudes-con-fecha-limite": {
+              "texto": "Pedidos con fecha límite",
+              "ruta": "?producto=Pedidos%20con%20fecha%20l%C3%ADmite#cotizar"
+            },
+            "servicios-de-diseno": {
+              "texto": "Servicios de diseño",
+              "ruta": "?producto=Servicios%20de%20dise%C3%B1o#cotizar"
+            },
+            "pedidos-multi-sucursal": {
+              "texto": "Pedidos multi-sucursal",
+              "ruta": "?producto=Pedidos%20multi-sucursal#cotizar"
+            }
+          }
+        }
+      }
+    },
+    "eventos": {
+      "clave": "eventos",
+      "columnas": {
+        "senalizacion-del-evento": {
+          "titulo": "Señalización del evento",
+          "enlaces": {
+            "fondo-step-repeat": {
+              "texto": "Fondo Step & Repeat",
+              "ruta": "?producto=Fondo%20Step%20%26%20Repeat#cotizar"
+            },
+            "lonas-de-vinilo-para-evento": {
+              "texto": "Lonas de vinilo para evento",
+              "ruta": "productos/lonas/"
+            },
+            "banderas-publicitarias": {
+              "texto": "Banderas publicitarias",
+              "ruta": "?producto=Banderas%20publicitarias#cotizar"
+            },
+            "caballetes-y-senales-de-direccion": {
+              "texto": "Caballetes y señales de dirección",
+              "ruta": "?producto=Caballetes%20y%20se%C3%B1ales%20de%20direcci%C3%B3n#cotizar"
+            },
+            "manteles-y-caminos-de-mesa": {
+              "texto": "Manteles y caminos de mesa",
+              "ruta": "productos/manteles-personalizados/"
+            }
+          }
+        },
+        "ropa-para-evento": {
+          "titulo": "Ropa para evento",
+          "enlaces": {
+            "pantuflas-personalizadas": {
+              "texto": "Pantuflas personalizadas",
+              "ruta": "productos/pantuflas-personalizadas/"
+            },
+            "playeras-para-evento": {
+              "texto": "Playeras para evento",
+              "ruta": "productos/playeras-personalizadas/"
+            },
+            "gorras-personalizadas": {
+              "texto": "Gorras personalizadas",
+              "ruta": "productos/gorras-personalizadas/"
+            },
+            "polos-para-staff": {
+              "texto": "Polos para staff",
+              "ruta": "productos/polos-personalizados/"
+            },
+            "playeras-de-voluntarios": {
+              "texto": "Playeras de voluntarios",
+              "ruta": "productos/playeras-personalizadas/"
+            },
+            "bolsas-personalizadas": {
+              "texto": "Bolsas personalizadas",
+              "ruta": "productos/bolsas-personalizadas/"
+            }
+          }
+        },
+        "impresos-para-evento": {
+          "titulo": "Impresos para evento",
+          "enlaces": {
+            "flyers-y-programas": {
+              "texto": "Flyers y programas",
+              "ruta": "productos/volantes/"
+            },
+            "menus-y-porta-menus": {
+              "texto": "Menús y porta-menús",
+              "ruta": "productos/menus/"
+            },
+            "boletos-e-invitaciones": {
+              "texto": "Boletos e invitaciones",
+              "ruta": "productos/boletos-para-eventos/"
+            },
+            "posters-de-evento": {
+              "texto": "Pósters de evento",
+              "ruta": "productos/posters/"
+            },
+            "stickers-de-papel": {
+              "texto": "Stickers de papel",
+              "ruta": "productos/etiquetas-de-papel/"
+            },
+            "gafetes-e-insertos": {
+              "texto": "Gafetes e insertos",
+              "ruta": "productos/gafetes/"
+            }
+          }
+        }
+      }
+    }
+  }
+}
