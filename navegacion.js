@@ -1,6 +1,9 @@
-const siteRoot = new URL(".", document.currentScript.src);
+const navigationScript = new URL(document.currentScript.src);
+const siteRoot = new URL(".", navigationScript);
+const menuUrl = new URL("catalogo/menu-matamoros.js", siteRoot);
+menuUrl.search = navigationScript.search;
 
-import(new URL("catalogo/menu-matamoros.js", siteRoot))
+import(menuUrl)
   .then(({ default: menu }) => installNavigation(menu))
   .catch((error) => console.error("El menú completo no está disponible.", error));
 
